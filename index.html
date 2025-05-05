@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulated Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Simulated Bank</h1>
+    <div id="app">
+        <div id="auth">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <button onclick="register()">Register</button>
+        </div>
+        <div id="dashboard" style="display:none;">
+            <h2>Account Dashboard</h2>
+            <p>Balance: $<span id="balance">0.00</span></p>
+            <input type="text" id="toUser" placeholder="Send to (username)">
+            <input type="number" id="amount" placeholder="Amount">
+            <button onclick="transfer()">Transfer</button>
+            <h3>Transactions</h3>
+            <ul id="transactions"></ul>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
